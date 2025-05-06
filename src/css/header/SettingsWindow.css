@@ -1,0 +1,247 @@
+section{
+  padding-bottom: 0.2rem;
+}
+
+.titleSection{
+  font-size: 14px;
+  opacity: 0.6;
+  padding: 0.5rem 0;
+}
+
+.title {
+  font-size: 14px;
+  opacity: 0.6;
+  padding: 0.5rem 0;
+}
+
+.subtitle{
+  padding: 0.5rem 0;
+}
+
+/*header section*/
+.settingsHeaderSection{
+  padding: 0.3rem 2rem 1.2rem;
+  position: relative;
+}
+
+.settingsHeaderTitle{
+  font-size: 16px;
+  margin: 0;
+  text-align: center;
+}
+
+.iconClose{ 
+  position: absolute;
+  right: 0.4rem;
+  top: 0.4rem;
+}
+
+.iconClose path{ 
+  fill: var(--fontColor);
+}
+
+/* Section Styles */
+.timerSettings {
+  padding-bottom: 0.2rem;
+}
+
+.timerSubtitle {
+  font-size: 16px;
+  padding: 0.5rem 0;
+}
+
+.timerOptions {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  gap: 0.5rem;
+}
+
+.breakInterval {
+  margin-top: 1rem;
+}
+
+/* Individual Timer Setting */
+.timerSetting {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.timerLabel {
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+  opacity: 0.6;
+}
+
+.timerControls {
+  align-items: center;
+  background-color: var(--fontColor);
+  border-radius: 0.625rem;
+  display: flex;
+  height: 2.5rem;
+  justify-content: space-between;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.timerButtons {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.timerInput {
+  background-color: transparent;
+  border: none;
+  color: var(--background);
+  font-size: 14px;
+  font-weight: 700;
+  outline: none;
+  width: 3rem;
+}
+
+.arrowIcon {
+  cursor: pointer;
+  fill: var(--fontColor);
+  transition: fill 0.2s ease-in-out;
+}
+
+.arrowIcon path{
+  fill: var(--background);
+  stroke: var(--background);
+}
+
+/*intervals*/
+.longBreakInterval{
+  padding: 1rem 0 0.5rem;
+}
+
+.intervalControls{
+  align-items: center;
+  background-color: var(--fontColor);
+  border-radius: 0.625rem;
+  display: flex;
+  height: 2.5rem;
+  justify-content: space-between;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.intervalInput{
+  background-color: transparent;
+  border: none;
+  color: var(--background);
+  font-size: 14px;
+  font-weight: 700;
+  outline: none;
+  width: 2rem;
+}
+
+.intervalButtons{
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+/*theme section*/
+.settingThemeSection{
+  padding: 0.5rem 0 1.6rem;
+}
+
+.modeSection{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  margin: 0.3rem 0;
+}
+
+.themeSection{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.themeBtn{
+  box-shadow:
+  0px 0px 2.2px rgba(0, 0, 0, 0.626),
+  0px 0px 5.3px rgba(0, 0, 0, 0.028),
+  0px 0px 10px rgba(0, 0, 0, 0.035),
+  0px 0px 17.9px rgba(0, 0, 0, 0.042),
+  0px 0px 33.4px rgba(0, 0, 0, 0.05),
+  0px 0px 80px rgba(0, 0, 0, 0.07);
+  border: none;
+  border-radius: 0.3rem;
+  height: 30px;
+  margin-left: 0.5rem;
+  width: 30px;
+}
+
+.windowTheme{
+  max-width: 350px;
+}
+
+.themeOptionBtn__section{
+  display: grid;
+  column-gap: 0.75rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-between;
+  padding-top: 1rem;
+  row-gap: 0.75rem;
+  width: 100%;
+}
+
+.themeOptionBtnTitle{
+  font-size: 16px;
+  padding-bottom: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+.themeOptionBtn{
+  aspect-ratio: 1 / 1;
+  border-radius: 1.1rem;
+  box-shadow:
+  0px 0px 2.2px rgba(0, 0, 0, 0.019),
+  0px 0px 5.3px rgba(0, 0, 0, 0.028),
+  0px 0px 10px rgba(0, 0, 0, 0.035),
+  0px 0px 17.9px rgba(0, 0, 0, 0.042),
+  0px 0px 33.4px rgba(0, 0, 0, 0.05),
+  0px 0px 80px rgba(0, 0, 0, 0.07);
+  width: 100%;
+}
+
+@media(min-width: 425px){
+  .longBreakInterval{
+    padding: 1.5rem 0 0.5rem;
+  }
+
+  .colorSubtitle{
+    padding: 0.3rem 0;
+  }
+}
+
+@media (min-width: 475px) {
+  .timerOptions {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .timerSetting{
+    width: 98px;
+  }
+
+  .longBreakInterval{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .intervalControls{
+    width: 70px;
+  }
+}

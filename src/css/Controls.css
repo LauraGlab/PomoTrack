@@ -1,0 +1,105 @@
+.controlsSection {
+  background-color: var(--bckgr-second);
+  border-radius: 3rem;
+  box-shadow:
+  0px 0px 2.2px rgba(0, 0, 0, 0.019),
+  0px 0px 5.3px rgba(0, 0, 0, 0.028),
+  0px 0px 10px rgba(0, 0, 0, 0.035),
+  0px 0px 17.9px rgba(0, 0, 0, 0.042),
+  0px 0px 33.4px rgba(0, 0, 0, 0.05),
+  0px 0px 80px rgba(0, 0, 0, 0.07);
+  display: flex;
+  flex-direction: row;
+  height: 52px;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  z-index: 9;
+}
+
+.controlBtn {
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  border-radius: 4rem;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  font-size: 10px;
+  font-weight: 700;
+  height: 100%;
+  justify-content: center;
+  outline: none;
+  padding: 0.5rem 0.6rem;
+  transition: all 0.7s ease-out;
+  width: 50%;
+}
+
+.controlBtn:hover{
+  background-color: var(--fontColor);
+  color: var(--background);
+  fill: var(--background);
+}
+
+.active{
+  background-color: var(--fontColor);
+  color: var(--background);
+}
+
+.pomodoroSvg{
+  margin-right: 0.2rem;
+}
+
+.pomodoroSvg path{
+  fill: var(--fontColor);
+  transition: all 0.5s ease-out;
+}
+
+.sBreakSvg{
+  fill: var(--fontColor);
+  transition: all 0.5s ease-out;
+}
+
+.lBreakSvg{
+  fill: var(--fontColor);
+  transition: all 0.5s ease-out;
+}
+
+.controlBtn:hover > .pomodoroSvg path{
+  fill: var(--background);
+}
+
+.controlBtn:hover > .sBreakSvg{
+  fill: var(--background);
+}
+
+.controlBtn:hover > .lBreakSvg{
+  fill: var(--background);
+}
+
+.activeSVG, .activeSVG path{
+  fill: var(--background);
+}
+
+@media(min-width: 340px){
+  .sBreakSvg, .lBreakSvg{
+    margin-right: 0.4rem;
+  }
+}
+
+@media(min-width: 400px){
+  .controlBtn {
+    font-size: 12px;
+  }
+}
+
+@media(min-width: 1025px){
+  .controlsSection {
+    height: 10vh;
+    width: 90%;
+  }
+
+  .controlBtn {
+    height: 10vh;
+  }
+}

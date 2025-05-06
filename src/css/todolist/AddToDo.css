@@ -1,0 +1,66 @@
+.addTodoSection{
+    align-items: center;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+    width: 100%;
+}
+
+.addTodoBtn{
+    align-items: center;
+    background-color: var(--fontColor);
+    border: none;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    color: var(--background);
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    height: 50px;
+    justify-content:center;
+    outline: none;
+    padding: 1.2rem 5%;
+    position: relative;
+    text-align: center;
+    transition: all 1s ease-out;
+    width: 100%;
+    z-index: 1;
+}
+
+.addSvg{
+    fill: var(--background);
+    margin-right: 0.5rem;
+}
+
+.errorMessage{
+    font-size: 14px;
+    font-weight: 800;
+    margin-top: -1.5rem;
+    padding-top: 1rem;
+    visibility: visible;
+}
+.errorMessageHidden{
+    font-size: 14px;
+    margin-top: -1.5rem;
+    padding-top: 1rem;
+    visibility: hidden;
+}
+
+.addSectionTitle{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+@media(min-width: 1000px){
+    .addSectionTitle{
+        font-size: 17px;
+    }
+
+    .priorities__section{
+        column-gap: 40%;
+    }
+}

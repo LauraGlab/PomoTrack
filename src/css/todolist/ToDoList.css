@@ -1,0 +1,80 @@
+.toDoListSection{
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /*min-height: 610px;*/
+    width: 100%;
+}
+
+.titleToDo__section{
+    display: flex;
+    flex-direction: row;
+    height: 58px;
+    justify-content: space-between;
+    padding: 1rem 1rem 0.3rem;
+    width: 100%;
+}
+
+.titleToDo{
+    font-size: 17px;
+}
+
+.titleNumber{
+    font-weight: 400;
+}
+
+.menuDelete{
+    background-color: inherit;
+    border: none;
+    margin-left: 1rem;
+}
+
+.tasksSection{
+    height: 500px;
+    margin: 0;
+    width: 100%;
+    margin-left: 0.5rem;
+    overflow-y: scroll;
+    width: 98%;
+}
+
+/*no tasks menu*/
+.noTasksDisplay{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: center;
+    text-align: center;
+}
+
+.noTasksImg{
+    height: 85px;
+    width: 85px;
+}
+
+.noTasksText{
+    font-weight: 600;
+    padding: 0.2rem 0 0.5rem;
+}
+
+.noTasksDisplayNone{
+    display: none;
+}
+
+@media(max-width: 230px){
+  .toDoListSection{
+    display: none;
+  }
+}
+
+@media(min-width: 1025px){
+    .tasksSection{
+        height: 70vh;
+    }
+
+    .noTasksDisplay{
+        height: 67vh;
+    }
+}

@@ -1,0 +1,25 @@
+.settingsBtn{
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    outline: none;
+}
+
+.iconSetting path{
+    fill: var(--fontColor);
+    transition: transform 0.3s ease-in-out;
+}
+
+.iconSetting:hover{
+    animation: spin 1s linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

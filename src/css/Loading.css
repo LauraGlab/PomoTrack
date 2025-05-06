@@ -1,0 +1,39 @@
+.loadingPage{
+  align-items: center;
+  background: #871B2B;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100svh;
+  width: 100vw;
+}
+
+.logoLoader{
+  margin-bottom: 1rem;
+  width: 70px;
+  z-index: 999;
+}
+
+.loader {
+  animation: loading 1s linear infinite alternate;
+  color: #CAC8C3;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.loader:before {
+  content:"Loading..."
+}
+
+@media(min-width: 768px){
+  .logoLoader{
+    width: 100px;
+  }
+
+  .loader {
+    font-size: 30px;
+  }
+}
+
+@keyframes loading {to{opacity: 0}}

@@ -1,0 +1,94 @@
+.dailyProgressSection{
+    background-color: rgba(255, 255, 255, 0.101);
+    border: 1px solid var(--fontColor);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    height: 100px;
+    justify-content:space-between;
+    padding: 1rem 1.3rem;
+    position: relative;
+    width: 100%;
+}
+
+.dailyProgressInfoSection{
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.dailyProgressTitle{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.completedTasksSection{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.formula{
+    background-color: var(--fontColor);
+    border-radius: 1.5rem;
+    color: var(--background);
+    margin-right: 0.1rem;
+    padding: 0.1rem;
+    width: fit-content;
+}
+
+.formulaText{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.date{
+    font-size: 13px;
+}
+
+.progressbar{
+    font-weight: 600;
+    position: absolute;
+    right: 1rem;
+    top: 0.75rem;
+}
+
+@media(min-width: 310px){
+    .completedTasksSection{
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .formula{
+        margin-right: 0.4rem;
+        padding: 0.1rem 0.7rem;
+    }
+}
+
+@media(min-width: 768px){
+    .dailyProgressTitle {
+        font-size: 17px;
+    }
+
+    .formulaText {
+        font-size: 15px;
+    }
+
+    .date{
+        font-size: 14px;
+    }
+
+    .progressbar {
+        position: initial;
+    }
+}
+
+@media(min-width: 1025px){
+    .dailyProgressSection{
+        height: 118px;
+        order: 1;
+        top: 0.45rem;
+    }
+}

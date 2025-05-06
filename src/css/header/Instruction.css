@@ -1,0 +1,31 @@
+.instructionBtn{
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    outline: none;
+    padding: 0;
+}
+
+.iconInfo{
+    height: 30px;
+    width: 30px;
+}
+
+.iconInfo path{
+    fill: var(--fontColor);
+}
+
+.instructionTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.instructionText{
+    font-weight: 700;
+    margin-top: 0.5rem;
+    text-align: center;
+}

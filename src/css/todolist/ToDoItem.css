@@ -1,0 +1,189 @@
+.swipe-list {
+    border: none;
+    position: relative;
+}
+
+/*swipeable btns*/
+.boxAction {
+    position: absolute;
+    right: 0;
+}
+
+.boxSecondAction{
+    left: 0;
+    position: absolute;
+}
+
+.btnSwipe{
+    position: relative;
+    width: 20px;
+}
+
+.btnSwipeSecond{
+    width: 20px;
+}
+
+.deleteItemBtn, .editBtn{
+    background: transparent;
+    border: none;
+    height: 70px;
+}
+
+.deleteItemBtn{
+    position: absolute;
+    right: 0;
+}
+
+.itemSvg{
+    fill: var(--background);
+}
+
+.item-group {
+    background-color: var(--fontColor);
+    border-radius: 2rem;
+    margin-bottom: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+/*todo*/
+.item {
+    align-items: center;
+    background: var(--background);
+    border: 1px solid var(--fontColor);
+    border-radius: 2rem;
+    display: grid;
+    grid-template-columns: 90% 10%;
+    height: 70px;
+    outline:none;
+    position: relative;
+    transition: all 0.1s linear;
+    z-index: 2;
+}
+
+.itemFirstSection{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding-left: 1rem;
+}
+
+/*checkbox*/
+.checkTask{
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: rgba(255, 255, 255, 0.101);
+    border: 1px solid var(--fontColor);
+    border-radius: 50%;
+    display: grid;
+    height: 20px;
+    margin: 0.3rem;
+    place-content: center;
+    pointer-events: auto;
+    width: 20px;
+    z-index: 9999;
+}
+
+.checkTask::before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: var(--background); /* Dynamic color */
+    mask-image: url(../../assets/images/checkMark.svg);
+    -webkit-mask-image: url(../../assets/images/checkMark.svg);
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    transform: scale(0); /* Hide initially */
+}
+
+.checkTask:checked::before {
+    border-radius: 50%;
+    transform: scale(1); /* Show when checked */
+    background-color: var(--background); /* Change color dynamically */
+}
+
+.checkTask:checked{
+    background-color: var(--fontColor);
+    border: 2px solid var(--fontColor);
+}
+
+.checkTask:checked ~ .textOfTaskContainer{
+    font-weight: 500;
+    text-decoration: line-through;
+}
+
+.categoryTask{
+    border: 1px solid var(--fontColor);
+    border-radius: 0.8rem;
+    margin: 0 0.8rem;
+    padding: 0.5rem;
+}
+
+.textOfTaskContainer{
+    min-width: 120px;
+    overflow: hidden;
+}
+
+.textOfTask{
+    border: none;
+    cursor:default;
+    font: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    z-index: 9;
+}
+
+/*todoMenu*/
+.itemSecond__section{
+    display: flex;
+    justify-content: right;
+    padding-right: 1rem;
+}
+
+.menuBtn{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+    text-align: right;
+}
+
+.priority-high {
+  border: 5px solid var(--fontColor);
+}
+
+.priority-medium {
+  border: 3.1px solid var(--fontColor);
+}
+
+.priority-low {
+  border: 2px solid var(--fontColor);
+}
+
+@media(max-width: 550px){
+    .checkTask {
+        height: 15px;
+        width: 15px;
+    }
+}
+
+@media(max-width: 400px){
+    .textOfTask{
+        width: 60%;
+    }
+}
+
+@media(max-width: 350px){
+    .textTask{
+        top: -2.5rem;
+    }
+}

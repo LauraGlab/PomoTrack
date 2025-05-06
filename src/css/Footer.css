@@ -1,0 +1,25 @@
+footer{
+    align-items: center;
+    bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 9;
+}
+
+.footerLink{
+    font-weight: 700;
+    margin-left: 0.2rem;
+    text-decoration: none;
+}
+
+@media(min-width: 1025px){
+    footer{
+        position: relative;
+        padding-bottom: 0.75rem;
+    }
+}
