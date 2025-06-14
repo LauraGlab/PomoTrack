@@ -551,7 +551,7 @@ link[rel="icon"] {
 @media(min-width: 1025px){
   .app{
     display: grid;
-    grid-template-rows: 8vh 90vh 2vh;
+    grid-template-rows: 55px 1fr 2vh;
     height: 100vh;
     min-height: auto;
   }
