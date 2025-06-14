@@ -52,7 +52,7 @@ export default function Header() {
         trailColor="rgba(255,255,255,0.2)" 
         style={{
           position: "absolute",
-          top: "8vh",
+          top: "55px",
           left: 0,
           width: "100%",
           zIndex: 9,
