@@ -177,7 +177,8 @@ link[rel="icon"] {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 350px;
+  height: auto;
+  max-height: 350px;
   padding: 1rem;
   width: 85%;
 }
@@ -385,7 +386,8 @@ link[rel="icon"] {
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 370px;
+  height: auto;
+  max-height: 370px;
   max-width: 370px;
   padding: 2rem;
   text-align: center;
